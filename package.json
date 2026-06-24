@@ -1,0 +1,11 @@
+{
+  "name": "bot-minecraft",
+  "version": "1.21.11",
+  "main": "index.js",
+  "dependencies": {
+    "mineflayer": "^4.24.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
