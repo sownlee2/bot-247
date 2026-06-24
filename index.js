@@ -1,14 +1,11 @@
 const mineflayer = require('mineflayer');
 const http = require('http');
 
-// Tạo web server ảo để Render không báo lỗi
 const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Bot Minecraft đang chạy online 24/7!\n');
+    res.end('Bot Minecraft 24/7\n');
 });
-server.listen(3000, () => {
-    console.log('Web server ảo đang chạy trên cổng 3000');
-});
+server.listen(3000);
 
 function createBot() {
     const bot = mineflayer.createBot({
@@ -29,11 +26,10 @@ function createBot() {
     }, 10000);
 
     bot.on('end', () => {
-        console.log('Bot bị mất kết nối, đang reconnect sau 5 giây...');
         setTimeout(createBot, 5000);
     });
 
-    bot.on('error', (err) => console.log('Lỗi Bot: ', err));
+    bot.on('error', (err) => console.log(err));
 }
 
 createBot();
