@@ -21,10 +21,25 @@ function initBot() {
 
     bot.on('spawn', () => {
         console.log('Bot đã vào server thành công!');
-        setTimeout(() => {
-            bot.chat('/register sonbot123 sonbot123'); 
-            bot.chat('/login sonbot123');
-        }, 1000);
+    });
+
+    // Tự động đọc tin nhắn của server để gõ lệnh đăng nhập/đăng ký chuẩn xác
+    bot.on('message', (jsonMsg) => {
+        const message = jsonMsg.toString();
+        
+        // Nếu server yêu cầu đăng ký tài khoản mới (lần đầu vào)
+        if (message.includes('/register')) {
+            setTimeout(() => {
+                bot.chat('/register sonbot123 sonbot123');
+            }, 2000);
+        }
+        
+        // Nếu server yêu cầu đăng nhập (từ lần thứ 2 trở đi)
+        if (message.includes('/login')) {
+            setTimeout(() => {
+                bot.chat('/login sonbot123');
+            }, 2000);
+        }
     });
 
     bot.on('end', () => {
