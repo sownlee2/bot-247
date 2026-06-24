@@ -3,7 +3,8 @@ const mineflayer = require('mineflayer');
 function createBot() {
     const bot = mineflayer.createBot({
         host: 'snpw812.mcsh.io',
-        username: 'BotTreoServer247'
+        username: 'BotTreoServer247',
+        version: '1.21.11'
     });
 
     bot.on('spawn', () => {
