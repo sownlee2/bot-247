@@ -24,15 +24,15 @@ function initBot() {
     });
 
     bot.on('message', (jsonMsg) => {
-        const message = jsonMsg.toString();
+        const message = jsonMsg.toString().toLowerCase();
         
-        if (message.includes('/register')) {
+        if (message.includes('register') || message.includes('đăng ký')) {
             setTimeout(() => {
                 bot.chat('/register sonbot123 sonbot123');
             }, 2000);
         }
         
-        if (message.includes('/login')) {
+        if (message.includes('login') || message.includes('đăng nhập')) {
             setTimeout(() => {
                 bot.chat('/login sonbot123');
             }, 2000);
