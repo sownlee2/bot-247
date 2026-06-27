@@ -10,7 +10,7 @@ const mineflayer = require('mineflayer');
 const botArgs = {
     host: 'SNPW.ddns.net', 
     port: 25980
-    username: 'AfkBotSNWP', 
+    username: 'SNWP', 
     version: '1.21.11' 
 };
 
