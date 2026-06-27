@@ -1,17 +1,8 @@
-const http = require('http');
-
-http.createServer((req, res) => {
-    res.write('Bot is running!');
-    res.end();
-}).listen(process.env.PORT || 3000);
-
-const mineflayer = require('mineflayer');
-
 const botArgs = {
-    host: 'SNPW.ddns.net', 
-    port: 25980
-    username: 'SNWP', 
-    version: '1.21.11' 
+    host: 'SNPW.ddns.net',
+    port: 25980,
+    username: 'SNPW',
+    version: '1.21.11'
 };
 
 let bot;
