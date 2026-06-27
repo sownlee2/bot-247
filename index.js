@@ -1,5 +1,5 @@
 const botArgs = {
-    host: 'SNPW.ddns.net',
+    host: 'dynamic-8.magmanode.com',
     port: 25980,
     username: 'SNPW',
     version: '1.21.11'
