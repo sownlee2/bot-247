@@ -9,9 +9,9 @@ http.createServer((req, res) => {
 
 // Cấu hình thông tin kết nối vào server MagmaNode
 const botArgs = {
-    host: 'dynamic-8.magmanode.com',
+    host: 'SNPW.ddns.net',
     port: 25980,
-    username: 'SNPW',
+    username: 'SNPWSMP',
     version: '1.21.11'
 };
 
