@@ -11,7 +11,7 @@ http.createServer((req, res) => {
 const botArgs = {
     host: 'dynamic-8.magmanode.com',
     port: 25976,
-    username: 'SNPW',
+    username: 'AfkBot',
     version: '1.21.11'
 };
 
