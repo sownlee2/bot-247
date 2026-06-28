@@ -11,7 +11,7 @@ http.createServer((req, res) => {
 const botArgs = {
     host: 'SNPW.ddns.net',
     port: 25980,
-    username: 'SNPWSMP',
+    username: 'SNPWSMP36',
     version: '1.21.11'
 };
 
