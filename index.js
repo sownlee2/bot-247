@@ -9,8 +9,8 @@ http.createServer((req, res) => {
 
 // Cấu hình kết nối server MagmaNode
 const botArgs = {
-    host: 'snpwmc.minefort.com',
-    port: 25565,
+    host: 'dynamic-8.magmanode.com',
+    port: 25976,
     username: 'SNPW',
     version: '1.21.11'
 };
